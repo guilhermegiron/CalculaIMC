@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Aula1910</string>
+    <string name="nome">Nome</string>
+    <string name="adulto_lbl">Adulto</string>
+    <string name="idoso_lbl">Idoso</string>
+    <string name="Enviar">Enviar</string>
+    <string name="Peso">Peso em Kg</string>
+    <string name="altura">Altura em Metros</string>
+    <string name="title_activity_primeira_tela">PrimeiraTela</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="action_settings">Settings</string>
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="info">Calcule seu IMC</string>
+    <string name="calcularImc">Calcular IMC</string>
+    <string name="classificao"><![CDATA[Adulto <= 65 Anos || Idoso >= 66 Anos]]></string>
+    <string name="aviso">Esse Aplicativo Apenas Serve de Referência,
+        Um Médico Deverá Ser Consultado!</string>
+    <string name="tabela">Tabela</string>
+</resources>
