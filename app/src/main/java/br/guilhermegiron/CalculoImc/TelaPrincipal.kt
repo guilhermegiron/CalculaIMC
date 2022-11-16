@@ -1,10 +1,10 @@
-package br.guilhermegiron.aula1910
+package br.guilhermegiron.CalculoImc
 
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.guilhermegiron.aula1910.databinding.ActivityTelaPrincipalBinding
+import br.guilhermegiron.CalculaIMC.databinding.ActivityTelaPrincipalBinding
 
 class TelaPrincipal : AppCompatActivity() {
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Aula1910</string>
+    <string name="app_name">CalculaIMC</string>
     <string name="nome">Nome</string>
     <string name="adulto_lbl">Adulto</string>
     <string name="idoso_lbl">Idoso</string>

@@ -1,4 +1,4 @@
-package br.guilhermegiron.aula1910
+package br.guilhermegiron.CalculoImc
 
 import org.junit.Test
 

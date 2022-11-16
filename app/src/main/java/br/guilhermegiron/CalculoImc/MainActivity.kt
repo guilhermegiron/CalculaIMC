@@ -1,11 +1,12 @@
-package br.guilhermegiron.aula1910
+package br.guilhermegiron.CalculoImc
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import br.guilhermegiron.aula1910.databinding.ActivityMainBinding
+import br.guilhermegiron.CalculaIMC.R
+import br.guilhermegiron.CalculaIMC.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         var nome: String
         binding.btnEnviar.setOnClickListener {
             if (!binding.etNome.text.isNullOrBlank()) nome =
-                binding.etNome.getText().toString() else nome = "Anônimo"
+                binding.etNome.text.toString() else nome = "Anônimo"
             if (binding.etPeso.text.isNullOrBlank() or binding.etAltura.text.isNullOrBlank() or (!binding.rbIdoso.isChecked && !binding.rbAdulto.isChecked)) {
                 Toast.makeText(
                     this, "Preencha o Peso, Altura e o Tipo do Cálculo! ", Toast.LENGTH_LONG

@@ -1,8 +1,9 @@
-package br.guilhermegiron.aula1910
+package br.guilhermegiron.CalculoImc
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import br.guilhermegiron.aula1910.databinding.ActivityTelaResultadoBinding
+import br.guilhermegiron.CalculaIMC.R
+import br.guilhermegiron.CalculaIMC.databinding.ActivityTelaResultadoBinding
 import java.text.DecimalFormat
 
 
