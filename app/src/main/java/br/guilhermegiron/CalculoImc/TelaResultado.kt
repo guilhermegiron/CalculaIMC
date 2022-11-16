@@ -95,7 +95,7 @@ class TelaResultado : AppCompatActivity() {
             if (resultado >= 27){
                 txtabela = "SobrePeso"
                 textoinformativo = "Atenção! Alguns quilos a mais já são \n" + "suficientes para que algumas pessoas desenvolvam doenças associadas," +
-                        "\n como diabetes e hipertensão. Procure um médico."
+                        "\n como diabetes e hipertensão.Procure um médico."
                 cormsginformativa = getColor(R.color.vermelho)
             }
         }
