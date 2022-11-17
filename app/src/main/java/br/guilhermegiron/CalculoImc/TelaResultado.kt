@@ -10,7 +10,6 @@ import java.text.DecimalFormat
 class TelaResultado : AppCompatActivity() {
 
     private lateinit var binding : ActivityTelaResultadoBinding
-    var resultado : Double = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,9 +21,9 @@ class TelaResultado : AppCompatActivity() {
 
     private fun configurarTela() {
         val i = intent
-        var textoinformativo : String = ""
-        var txtabela : String = ""
-        var cormsginformativa : Int = 0
+        var textoinformativo = ""
+        var txtabela = ""
+        var cormsginformativa = 0
 
         //Recuperar os Valores da Intent (Main Activity)
         val nome : String? = i.getStringExtra(MainActivity.TAGNOME)
@@ -83,7 +82,7 @@ class TelaResultado : AppCompatActivity() {
             }
 
             if (resultado >= 22 && resultado < 27){
-                txtabela = "Adequado ou Eutrófico"
+                txtabela = "Adequado"
                 textoinformativo = getString(R.string.peso_normal)
                 cormsginformativa = getColor(R.color.azulclaro)
             }
