@@ -8,7 +8,6 @@
     <string name="altura">Altura em Metros</string>
     <string name="title_activity_primeira_tela">PrimeiraTela</string>
 
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
@@ -23,22 +22,29 @@
     <string name="info">Calcule seu IMC</string>
     <string name="calcularImc">Calcular IMC</string>
     <string name="classificao"><![CDATA[Adulto <= 65 Anos || Idoso >= 66 Anos]]></string>
-    <string name="aviso">Esse Aplicativo Apenas Serve de Referência,
-        Um Médico Deverá Ser Consultado!</string>
+    <string name="aviso">Esse Aplicativo Apenas Serve de Referência, Um Médico Deverá Ser Consultado!</string>
     <string name="tabela">Tabela</string>
-
 
     <string name="baixo_peso">Você está abaixo do peso ideal. Isso pode ser apenas uma característica pessoal, mas também pode ser um sinal de
                         "desnutrição ou de algum problema de saúde. Caso esteja perdendo peso sem motivo aparente, procure um médico. </string>
 
     <string name="peso_normal">Parabéns, Você está no Peso Ideal</string>
+
     <string name="excesso_peso">Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas,
         como diabetes e hipertensão. É importante rever seus hábitos. Procure um médico.</string>
-    <string name="obesidadeI">Sinal de alerta! O excesso de peso é fator de risco para desenvolvimento de outros problemas de saúde. A boa notícia                         é que uma pequena perda de peso já traz benefícios à saúde. Procure um médico para definir o tratamento mais adequado para voce</string>
-    <string name="obesidadeII">Sinal vermelho! Ao atingir este nível de IMC, o risco de doenças associadas está entre alto e muito alto. Busque                          ajuda de um profissional de saúde; não perca tempo.</string>
-    <string name="obesidadeIII">Sinal vermelho! Ao atingir este nível de IMC, o risco de doenças associadas é muito alto. Busque ajuda de um \" +                         \"profissional de saúde; não perca tempo.</string>
-    <string name="baixo_peso_idoso">Você está abaixo do peso ideal. Isso pode ser apenas uma característica pessoal, mas também pode ser um sinal de \" +                         \"desnutrição ou de algum problema de saúde. Caso esteja perdendo peso sem motivo aparente, procure um médico.</string>
-    <string name="sobrepeso_idoso">Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como diabetes e hipertensão.Procure um médico.</string>
 
+    <string name="obesidadeI">Sinal de alerta! O excesso de peso é fator de risco para desenvolvimento de outros problemas de saúde.
+        A boa notícia é que uma pequena perda de peso já traz benefícios à saúde. Procure um médico para definir o tratamento mais adequado para voce</string>
+
+    <string name="obesidadeII">Sinal vermelho! Ao atingir este nível de IMC, o risco de doenças associadas está entre alto e muito alto.
+        Busque ajuda de um profissional de saúde; não perca tempo.</string>
+
+    <string name="obesidadeIII">Sinal vermelho! Ao atingir este nível de IMC, o risco de doenças associadas é muito alto.
+        Busque ajuda de um profissional de saúde;não perca tempo.</string>
+
+    <string name="baixo_peso_idoso">Você está abaixo do peso ideal. Isso pode ser apenas uma característica pessoal, mas também pode ser um sinal de
+        desnutrição ou de algum problema de saúde. Caso esteja perdendo peso sem motivo aparente, procure um médico.</string>
+
+    <string name="sobrepeso_idoso">Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como diabetes e hipertensão.Procure um médico.</string>
 
 </resources>
