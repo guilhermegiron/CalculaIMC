@@ -103,6 +103,5 @@ class TelaResultado : AppCompatActivity() {
         //Setar Texto Informativo + Cor do Texto
         binding.txInformativo.text = textoinformativo
         binding.txInformativo.setTextColor(cormsginformativa)
-
     }
 }
