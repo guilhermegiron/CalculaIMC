@@ -28,24 +28,30 @@ class MainActivity : AppCompatActivity() {
     private fun configurarButtomListener() {
         var nome: String
         binding.btnEnviar.setOnClickListener {
-            if (!binding.etNome.text.isNullOrBlank()) nome =
+            if (!binding.etNome.text.isNullOrEmpty()) nome =
                 binding.etNome.text.toString() else nome = "Anônimo"
-            if (binding.etPeso.text.isNullOrBlank() or binding.etAltura.text.isNullOrBlank() or (!binding.rbIdoso.isChecked && !binding.rbAdulto.isChecked)) {
+            if (binding.etPeso.text.isNullOrEmpty() or binding.etAltura.text.isNullOrEmpty()
+                or (!binding.rbIdoso.isChecked && !binding.rbAdulto.isChecked)
+            ) {
                 Toast.makeText(
                     this, "Preencha o Peso, Altura e o Tipo do Cálculo! ", Toast.LENGTH_LONG
                 ).show()
             } else {
                 try {
-                    var resultado: Double = calcular()
-                    var imagem: Int = verificarImagem()
-                    val myIntent = Intent(this, TelaResultado::class.java)
+                    val resultado: Double = calcular()
+                    if ((resultado == 0.00) or (resultado.isNaN()) ) {
+                        Toast.makeText(this, "Peso ou Altura deve ser Maior que 0! ", Toast.LENGTH_LONG).show()
+                    } else {
+                        val imagem: Int = verificarImagem()
+                        val myIntent = Intent(this, TelaResultado::class.java)
 
-                    //Envia os parametros para a Tela de Resultado
-                    myIntent.putExtra(TAGIMAGEM, imagem)
-                    myIntent.putExtra(TAGRESULTADO, resultado)
-                    myIntent.putExtra(TAGNOME, nome)
+                        //Envia os parametros para a Tela de Resultado
+                        myIntent.putExtra(TAGIMAGEM, imagem)
+                        myIntent.putExtra(TAGRESULTADO, resultado)
+                        myIntent.putExtra(TAGNOME, nome)
 
-                    startActivity(myIntent)
+                        startActivity(myIntent)
+                    }
                 } catch (ne: NumberFormatException) {
                     Toast.makeText(this, "Verifque o valor de Peso ou Altura! ", Toast.LENGTH_LONG)
                         .show()
@@ -56,16 +62,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun verificarImagem(): Int {
         //Se imagem = 1 - Alterar Imagem para imc_adultos.png || Se imagem = 2 - Alterar Imagem para imc_idosos.png
-        var imagem: Int = 0
+        var imagem = 0
         if (binding.rbAdulto.isChecked) imagem = 1
         if (binding.rbIdoso.isChecked) imagem = 2
         return imagem
     }
 
     private fun calcular(): Double {
-        var resultado: Double = 0.00
-        var peso: Double
-        var altura: Double
+        val resultado: Double
+        val peso: Double
+        val altura: Double
 
         //Recupera os Valores Informados de Peso e Altura
         peso = binding.etPeso.text.toString().toDouble()
@@ -93,7 +99,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun mudarCorBotao(i: Int) {
-        var color = when (i) {
+        val color = when (i) {
             1 -> {
                 Log.d("PUCMINAS", "Cor Azul Fraco")
                 getColor(R.color.azulclaro)
