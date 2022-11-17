@@ -38,41 +38,37 @@ class TelaResultado : AppCompatActivity() {
             // Compara os Resultados + Insere Texto Informativo + Cor do Texto
             if (resultado <= 18.5){
                 txtabela = "Baixo Peso"
-                textoinformativo = "Você está abaixo do peso ideal. Isso pode ser apenas uma característica pessoal, mas também pode ser um sinal de " +
-                        "desnutrição ou de algum problema de saúde. Caso esteja perdendo peso sem motivo aparente, procure um médico. "
+                textoinformativo = getString(R.string.baixo_peso)
                 cormsginformativa = getColor(R.color.azulclaro)
             }
 
             if (resultado >= 18.5 && resultado <= 24.9){
                 txtabela = "Peso Normal"
+                textoinformativo = getString(R.string.peso_normal)
                 cormsginformativa = getColor(R.color.azulclaro)
             }
 
             if (resultado >= 25 && resultado <= 29.9){
                 txtabela = "Excesso de Peso"
-                textoinformativo = "Atenção! Alguns quilos a mais já são suficientes para que algumas pessoas desenvolvam doenças associadas, como " +
-                        "diabetes e hipertensão. É importante rever seus hábitos. Procure um médico."
+                textoinformativo = getString(R.string.excesso_peso)
                 cormsginformativa = getColor(R.color.amarelofraco)
             }
 
             if (resultado >= 30 && resultado <= 34.9){
                 txtabela = "Obesidade de Classe 1"
-                textoinformativo = "Sinal de alerta! O excesso de peso é fator de risco para desenvolvimento de outros problemas de saúde. A boa notícia" +
-                        "é que uma pequena perda de peso já traz benefícios à saúde. Procure um médico para definir o tratamento mais adequado para voce"
+                textoinformativo = getString(R.string.obesidadeI)
                 cormsginformativa = getColor(R.color.amarelo)
             }
 
             if (resultado >= 35 && resultado <= 39.9){
                 txtabela = "Obesidade de Classe 2"
-                textoinformativo = "Sinal vermelho! Ao atingir este nível de IMC, o risco de doenças associadas está entre alto e muito alto. Busque " +
-                        "ajuda de um profissional de saúde; não perca tempo."
+                textoinformativo = getString(R.string.obesidadeII)
                 cormsginformativa = getColor(R.color.vermelho)
             }
 
             if (resultado >= 40){
                 txtabela = "Obesidade de Classe 3"
-                textoinformativo = "Sinal vermelho! Ao atingir este nível de IMC, o risco de doenças associadas é muito alto. Busque ajuda de um " +
-                        "profissional de saúde; não perca tempo."
+                textoinformativo = getString(R.string.obesidadeIII)
                 cormsginformativa = getColor(R.color.vermelho)
             }
         }
@@ -82,20 +78,19 @@ class TelaResultado : AppCompatActivity() {
             binding.imTabelaImc.setImageResource(R.drawable.imc_idosos)
             if (resultado <= 22){
                 txtabela = "Baixo Peso"
-                textoinformativo = "Você está abaixo do peso ideal. Isso pode ser apenas uma característica pessoal, mas também pode ser um sinal de " +
-                        "desnutrição ou de algum problema de saúde. Caso esteja perdendo peso sem motivo aparente, procure um médico."
+                textoinformativo = getString(R.string.baixo_peso_idoso)
                 cormsginformativa = getColor(R.color.amarelofraco)
             }
 
             if (resultado >= 22 && resultado < 27){
                 txtabela = "Adequado ou Eutrófico"
+                textoinformativo = getString(R.string.peso_normal)
                 cormsginformativa = getColor(R.color.azulclaro)
             }
 
             if (resultado >= 27){
                 txtabela = "SobrePeso"
-                textoinformativo = "Atenção! Alguns quilos a mais já são \n" + "suficientes para que algumas pessoas desenvolvam doenças associadas," +
-                        "\n como diabetes e hipertensão.Procure um médico."
+                textoinformativo = getString(R.string.sobrepeso_idoso)
                 cormsginformativa = getColor(R.color.vermelho)
             }
         }
